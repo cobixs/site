@@ -17,6 +17,7 @@
   <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="scripts/all-plugins.js"></script>
   <script type="text/javascript" src="scripts/plugins-activate.js"></script>
+  <script type="text/javascript" src="scripts/lottie.js"></script>
 </head>
 
 <style>
@@ -70,14 +71,14 @@
   </nav>
   <!-- Header Starts -->
   <section id="Banner" class="content-section">
-    <div class="container content-wrap text-center">
-      <div class="imgContainer">
+    <div id="logo" class="container content-wrap text-center">
+      <!--<div class="imgContainer">
         <img class="content-image" src="images/network.png">
       </div>
       <h1>cobixs</h1>
       <h3>
           <em>Software Factory</em>
-        </h3>
+        </h3>-->
     </div>
     <div class="overlay"></div>
   </section>
@@ -383,4 +384,13 @@
   </footer>
 </body>
 
+<script type="text/javascript">
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById("logo"),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'logoAnimation/data.json'
+})
+</script>
 </html>
